@@ -1,0 +1,19 @@
+{
+  "name": "test-visualiztion",
+  "version": "1.0.0",
+  "description": "Standard libraries for a working d3.js environment",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "^3.5.9"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yassine Alouini",
+  "license": "MIT"
+}

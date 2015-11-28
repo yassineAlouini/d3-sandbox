@@ -13,13 +13,13 @@ getData(); // popuate data
 
 // line chart based on http://bl.ocks.org/mbostock/3883245
 var margin = {
-        top: 20,
+        top: 30,
         right: 20,
         bottom: 30,
         left: 50
     },
     width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 400 - margin.top - margin.bottom;
 
 var x = d3.scale.linear()
     .range([0, width]);
@@ -33,7 +33,7 @@ var xAxis = d3.svg.axis()
 
 var yAxis = d3.svg.axis()
     .scale(y)
-    .orient("left");
+    .orient("right");
 
 var line = d3.svg.line()
     .x(function(d) {
@@ -76,7 +76,7 @@ function getData() {
 
 // loop to populate data array with
 // probabily - quantile pairs
-for (var i = 0; i < 100000; i++) {
+for (var i = 0; i < 10000; i++) {
     let q = normal() // calc random draw from normal dist
     let p = gaussian(q) // calc prob of rand draw
     let el = {

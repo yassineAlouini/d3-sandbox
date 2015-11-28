@@ -22,6 +22,8 @@ To install this project libraries, run: ```npm install```
 
 To start a local server for this project, run: ```gulp default```
 
-## Copyright
+## License
 
-MIT, Yassine Alouini 2015
+The MIT License (MIT)
+
+Copyright (c) 2015 Yassine Alouini
